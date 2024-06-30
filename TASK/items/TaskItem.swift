@@ -17,8 +17,7 @@ struct TaskItem: View {
         self.task = task
         isComplected = task.isComplected
     }
-    
-    
+
     var body: some View {
         HStack {
             Image(uiImage:task.image ?? UIImage(resource: .imageHolderIcon))
