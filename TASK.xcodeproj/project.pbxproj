@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		524C737F2C2E546B008AB1C8 /* TASKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C737E2C2E546B008AB1C8 /* TASKApp.swift */; };
+		524C737F2C2E546B008AB1C8 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C737E2C2E546B008AB1C8 /* AppMain.swift */; };
 		524C73852C2E546C008AB1C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524C73842C2E546C008AB1C8 /* Assets.xcassets */; };
 		524C73882C2E546C008AB1C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524C73872C2E546C008AB1C8 /* Preview Assets.xcassets */; };
-		52F56D022C2F3AE9008C599C /* Midterm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D012C2F3AE9008C599C /* Midterm.swift */; };
+		52F56D022C2F3AE9008C599C /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D012C2F3AE9008C599C /* MainScreen.swift */; };
 		52F56D042C2F3CE7008C599C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D032C2F3CE7008C599C /* HomeView.swift */; };
 		52F56D062C2F3DF7008C599C /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D052C2F3DF7008C599C /* TaskData.swift */; };
 		52F56D0B2C2F3FE9008C599C /* CreationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D0A2C2F3FE9008C599C /* CreationScreen.swift */; };
 		52F56D0E2C2F4055008C599C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D0D2C2F4055008C599C /* MainViewModel.swift */; };
-		52F56D102C2F4CEE008C599C /* TaskListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D0F2C2F4CEE008C599C /* TaskListScreen.swift */; };
+		52F56D102C2F4CEE008C599C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D0F2C2F4CEE008C599C /* HomeScreen.swift */; };
 		52F56D122C2FAC70008C599C /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D112C2FAC70008C599C /* TaskItem.swift */; };
 		52F56D152C2FAE49008C599C /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D142C2FAE49008C599C /* CheckboxToggleStyle.swift */; };
 		52F56D172C2FB47D008C599C /* DetailedSettingsScreen .swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56D162C2FB47D008C599C /* DetailedSettingsScreen .swift */; };
@@ -26,15 +26,15 @@
 
 /* Begin PBXFileReference section */
 		524C737B2C2E546B008AB1C8 /* TASK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TASK.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		524C737E2C2E546B008AB1C8 /* TASKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASKApp.swift; sourceTree = "<group>"; };
+		524C737E2C2E546B008AB1C8 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		524C73842C2E546C008AB1C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524C73872C2E546C008AB1C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		52F56D012C2F3AE9008C599C /* Midterm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Midterm.swift; sourceTree = "<group>"; };
+		52F56D012C2F3AE9008C599C /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		52F56D032C2F3CE7008C599C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		52F56D052C2F3DF7008C599C /* TaskData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
 		52F56D0A2C2F3FE9008C599C /* CreationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationScreen.swift; sourceTree = "<group>"; };
 		52F56D0D2C2F4055008C599C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		52F56D0F2C2F4CEE008C599C /* TaskListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListScreen.swift; sourceTree = "<group>"; };
+		52F56D0F2C2F4CEE008C599C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		52F56D112C2FAC70008C599C /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		52F56D142C2FAE49008C599C /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		52F56D162C2FB47D008C599C /* DetailedSettingsScreen .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailedSettingsScreen .swift"; sourceTree = "<group>"; };
@@ -73,12 +73,12 @@
 		524C737D2C2E546B008AB1C8 /* TASK */ = {
 			isa = PBXGroup;
 			children = (
-				524C737E2C2E546B008AB1C8 /* TASKApp.swift */,
+				524C737E2C2E546B008AB1C8 /* AppMain.swift */,
 				52F56D082C2F3E9A008C599C /* data */,
 				52F56D072C2F3E7C008C599C /* items */,
 				52F56D0C2C2F4037008C599C /* presenter */,
 				52F56D092C2F3FCE008C599C /* screens */,
-				52F56D012C2F3AE9008C599C /* Midterm.swift */,
+				52F56D012C2F3AE9008C599C /* MainScreen.swift */,
 				52F56D132C2FAE3A008C599C /* utils */,
 				524C73842C2E546C008AB1C8 /* Assets.xcassets */,
 				524C73862C2E546C008AB1C8 /* Preview Content */,
@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				52F56D0A2C2F3FE9008C599C /* CreationScreen.swift */,
-				52F56D0F2C2F4CEE008C599C /* TaskListScreen.swift */,
+				52F56D0F2C2F4CEE008C599C /* HomeScreen.swift */,
 				52F56D162C2FB47D008C599C /* DetailedSettingsScreen .swift */,
 			);
 			path = screens;
@@ -216,13 +216,13 @@
 				52F56D152C2FAE49008C599C /* CheckboxToggleStyle.swift in Sources */,
 				52F56D172C2FB47D008C599C /* DetailedSettingsScreen .swift in Sources */,
 				52F56D0E2C2F4055008C599C /* MainViewModel.swift in Sources */,
-				52F56D102C2F4CEE008C599C /* TaskListScreen.swift in Sources */,
+				52F56D102C2F4CEE008C599C /* HomeScreen.swift in Sources */,
 				52F56D062C2F3DF7008C599C /* TaskData.swift in Sources */,
-				52F56D022C2F3AE9008C599C /* Midterm.swift in Sources */,
+				52F56D022C2F3AE9008C599C /* MainScreen.swift in Sources */,
 				52F56D042C2F3CE7008C599C /* HomeView.swift in Sources */,
 				52F56D1E2C2FCA30008C599C /* ColorExtention.swift in Sources */,
 				52F56D192C2FBCA6008C599C /* StatusData.swift in Sources */,
-				524C737F2C2E546B008AB1C8 /* TASKApp.swift in Sources */,
+				524C737F2C2E546B008AB1C8 /* AppMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

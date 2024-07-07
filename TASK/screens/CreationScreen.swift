@@ -32,12 +32,13 @@ struct CreationScreen: View {
             Text("Title")
                     .labelTextStyle()
                 
-            TextField("Type something here...", text: $title)
+            TextField("...", text: $title)
             //. textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding ( )
-                .background (Color.gray.opacity(0.3).cornerRadius (10))
-                .foregroundColor(.red)
-                .font(.headline)
+                .textFieldStyle(.roundedBorder)
+                .font(.title)
+                .overlay(
+                       RoundedRectangle(cornerRadius: 8)
+                           .stroke(Color.orange))
                 
                 Text("Discreption")
                     .labelTextStyle()
@@ -46,13 +47,19 @@ struct CreationScreen: View {
                  .lineLimit(20)
                  .font(.title)
                  .textFieldStyle(.roundedBorder)
+                 .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.orange))
                 
                 DatePicker(selection: $date, in: ...Date.now, displayedComponents: .date) {
                                Text("Due date")
+                    
                             .labelTextStyle()
                            }
                 
+                
                 PhotosPicker("Select Task image", selection: $avatarItem, matching: .images)
+                
                 
                 
                 
@@ -92,7 +99,7 @@ struct CreationScreen: View {
                     Text("Save".uppercased())
                         .padding()
                         .frame (maxWidth: .infinity)
-                        .background (Color.blue.cornerRadius (10))
+                        .background (secondaryColor.cornerRadius (10))
                         .foregroundColor(.white)
                         .font(.headline)
                 } )

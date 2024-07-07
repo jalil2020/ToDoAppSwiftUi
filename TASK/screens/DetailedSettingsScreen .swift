@@ -7,13 +7,17 @@
 
 import SwiftUI
 
-struct DetailedSettingsScreen: View {
+struct SettingsScreen: View {
     @EnvironmentObject var vm: MainViewModel
 
-    let statusSort = [StatusData.NONE.rawValue, StatusData.COMPLECTED.rawValue, StatusData.PENDING.rawValue]
+    let statusSort = [StatusData.ALL.rawValue, StatusData.COMPLECTED.rawValue, StatusData.PENDING.rawValue]
     
     var body: some View {
         VStack{
+            Text("Setting screen")
+                .font(.title)
+                .bold()
+                .foregroundColor(.black)
             GroupBox("Sorting Features") {
                 VStack(alignment: .leading) {
                     HStack{
@@ -29,6 +33,8 @@ struct DetailedSettingsScreen: View {
                             }
                         }
                         .pickerStyle(.menu)
+                        .accentColor(.blue)
+                        
                     }
                 }
                 .frame(width: .infinity)
@@ -45,11 +51,14 @@ struct DetailedSettingsScreen: View {
                                 }
                             }
                             .pickerStyle(.menu)
+                            .accentColor(.blue)
+
                     }
                   
                 }
                 .frame(width: .infinity)
             }
+            Spacer()
         }
         .onChange(of: vm.isDescendingSort, { oldValue, newValue in
             vm.setIsDescendingSort(b: vm.isDescendingSort)
@@ -78,5 +87,5 @@ func getActionSheet() -> ActionSheet {
         buttons: [button1, button2, button3, button1, button1, button2, button2])
 }
 #Preview {
-    DetailedSettingsScreen()
+    SettingsScreen()
 }

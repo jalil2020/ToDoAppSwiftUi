@@ -14,9 +14,9 @@ class MainViewModel : ObservableObject {
     
     
     @Published var isDescendingSort: Bool = UserDefaults.standard.bool(forKey: "isDescendingSort")
-    @Published var complectedSort: String = (UserDefaults.standard.string(forKey: "complectedSort") ?? StatusData.NONE.rawValue)
+    @Published var complectedSort: String = (UserDefaults.standard.string(forKey: "complectedSort") ?? StatusData.ALL.rawValue)
    
-    @Published var filter: String = (UserDefaults.standard.string(forKey: "filter") ?? StatusData.NONE.rawValue)
+    @Published var filter: String = (UserDefaults.standard.string(forKey: "filter") ?? StatusData.ALL.rawValue)
     
     
     func addTask(task:TaskData){
@@ -46,7 +46,7 @@ class MainViewModel : ObservableObject {
     func filterAndSort(){
         tempList = taskList
         tempList.removeAll{item in
-            if filter == StatusData.NONE.rawValue {
+            if filter == StatusData.ALL.rawValue {
                 false
             }else{
                 item.status.rawValue != filter

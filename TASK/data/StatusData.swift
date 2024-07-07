@@ -10,6 +10,6 @@ import SwiftUI
 enum StatusData:String{
     case PENDING
     case COMPLECTED
-    case NONE
+    case ALL
 }
 

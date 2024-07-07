@@ -19,39 +19,57 @@ struct TaskItem: View {
     }
 
     var body: some View {
-        HStack {
-            Image(uiImage:task.image ?? UIImage(resource: .imageHolderIcon))
-                .resizable()
-                  .aspectRatio(contentMode: .fill)
-                  .frame(width: 120, height: 120)
-                  .cornerRadius(20)
-                  .padding()
+        VStack(alignment:.leading) {
+            HStack(alignment:.center){
+              
+                
+                Image(uiImage:task.image ?? UIImage(resource: .imageHolderIcon))
+                    .resizable()
+                      .aspectRatio(contentMode: .fill)
+                      .frame(width: .infinity, height: 120)
+                      .cornerRadius(20)
+                Spacer()
+                
+               
+            }
+           
             
             VStack(alignment:.leading){
                 Text(task.title)
                     .titleTextStyle()
+                    .frame(width: .infinity)
+                    .multilineTextAlignment(.center)
                 
                 Text(task.descreption)
-                    .descriptionTextStyle()
+                  .descriptionTextStyle()
                 
-                Text(task.date.formatted())
-                    .descriptionTextStyle()
-                    .bold()
-                    .italic()
+                HStack{
+                    Toggle(isOn: $isComplected) {
+                          }
+                    .frame(width: 40)
+                          .toggleStyle(CheckboxToggleStyle())
+                          .foregroundColor(primaryColor)
+                          .shadow(radius: 40)
+                    Spacer()
+                    Text(task.date.formatted())
+                        .foregroundColor(.blue)
+                        .descriptionTextStyle()
+                        .bold()
+                        .italic()
+                }
+               
 
             }
-            Toggle(isOn: $isComplected) {
-                  }
-                  .toggleStyle(CheckboxToggleStyle())
-                  .foregroundColor(secondaryColor)
-                  .padding()
+            .frame(width: .infinity)
+          
         }
+        .padding()
         .background(
             RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))
                 .foregroundColor(.white)
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(secondaryColor, lineWidth: 5)
+                        .stroke(primaryColor, lineWidth: 5)
                 )
         )
         .onChange(of: isComplected, {

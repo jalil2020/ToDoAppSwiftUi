@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct TASKApp: App {
+struct AppMain: App {
 //    var sharedModelContainer: ModelContainer = {
 //        let schema = Schema([
 //            Item.self,
@@ -25,7 +25,7 @@ struct TASKApp: App {
 
     var body: some Scene {
         WindowGroup {
-            Midterm()
+            MainScreen()
         }
 //        .modelContainer(sharedModelContainer)
     }

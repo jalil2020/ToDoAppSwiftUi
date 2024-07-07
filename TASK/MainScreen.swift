@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Midterm: View {
+struct MainScreen: View {
     @State private var vm = MainViewModel()
     var body: some View {
         
@@ -18,20 +18,20 @@ struct Midterm: View {
         ]
         
         TabView(selection:$selectedTab) {
-            TaskListScreen()
+            HomeScreen()
                 .tabItem {
                 Image(systemName:"house.fill")
                 Text("Home ")
             }.tag(0)
 
         
-            DetailedSettingsScreen().tabItem {
-                Image(systemName:"person")
+            SettingsScreen().tabItem {
+                Image(systemName:"gearshape")
                 Text("Setting")
             }.tag(1)
 
         }
-        .accentColor(primaryColor)
+        .accentColor(secondaryColor)
         .environmentObject(vm)
         
 
@@ -39,5 +39,5 @@ struct Midterm: View {
 }
 
 #Preview {
-    Midterm()
+    MainScreen()
 }
